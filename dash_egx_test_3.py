@@ -12,7 +12,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # This server line allows Heroku to deploy it online instead of it being generated on a local host
 server = app.server
 
-egx_df = pd.read_excel('EGX100_financial_statements/Annual_FS-07092021234959.xlsx')
+egx_df = pd.read_excel('C:\Users\Adam\Desktop\Dcode App\EGX100_financial_statements/Annual_FS-07092021234959.xlsx')
 egx_df[['ticker','index','sector','statement','period']] = egx_df[['ticker','index','sector','statement','period']].fillna(method="pad")
 egx_df.set_index('item',inplace=True)
 

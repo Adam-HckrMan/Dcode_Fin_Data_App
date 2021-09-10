@@ -12,8 +12,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 const PORT = process.env.PORT || '8080'
 app = express();
 app.set("port", PORT);
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+
 
 # This server line allows Heroku to deploy it online instead of it being generated on a local host
 server = app.server

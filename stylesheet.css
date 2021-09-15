@@ -1,0 +1,77 @@
+* { box-sizing: border-box;}
+
+.navbar {
+    /* border: 2px solid red; */
+    padding: 1rem 0rem;
+}
+
+.navbar-container {
+    /* border: 2px solid black; */
+    padding: 0;
+    display: inline-block;
+    margin: 0 1.875rem;
+}
+
+
+
+.dcode-logo {
+    height: 50px;
+    /* border: 2px solid red; */
+    margin-left: 0;
+}
+
+.nav {
+    /* border: 2px solid yellow; */
+    margin-left: auto;
+}
+
+.nav .nav-item .nav-link {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: rgb(0,112,192);
+}
+
+.input-container {
+    /* border: 2px solid red; */
+    /* padding: 30px 0; */
+    margin: 1.875rem 1.875rem;
+}
+
+.index-sector-container {
+    /* border: 2px solid green; */
+    padding: 0;
+    margin: 30px 0 10px 0;
+}
+
+.index-checklist {
+    width: 11%; 
+    display: inline-block;
+    min-width: 75px; 
+    /* border: 1px solid lightgrey; */
+    padding: 0;
+}
+
+.sectors-dropdown {
+    width: 82%; 
+    /* display: inline-block; */
+    float : right;
+    border: 1px solid rgb(0,112,192);
+    border-radius: 4px;
+    color: rgb(31, 73, 125)
+}
+
+.first-indicator {
+    border: 1px solid rgb(0,112,192);
+    border-radius: 4px;
+    margin-top: 1rem;
+    color: rgb(31, 73, 125);
+}
+
+.second-indicator {
+    border: 1px solid rgb(0,112,192);
+    border-radius: 4px;
+    margin-top: 1rem;
+    color: rgb(31, 73, 125)
+}

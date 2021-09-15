@@ -7,10 +7,10 @@ import pandas as pd
 import plotly.express as px
 from dash_bootstrap_templates import load_figure_template
 
-# external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__)
 
-# load_figure_template("DARKLY")
+load_figure_template("DARKLY")
 
 
 server = app.server
@@ -286,4 +286,5 @@ def update_y_timeseries(hoverData, yaxis_column_name, axis_type):
     return create_time_series(dff, axis_type, yaxis_column_name)
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=80)
+    from os import environ
+    app.run(debug=False, port=environ.get("PORT", 5000), processes=2)

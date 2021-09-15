@@ -12,6 +12,7 @@ app = dash.Dash(__name__)
 
 load_figure_template("DARKLY")
 
+import .heroku
 
 server = app.server
 

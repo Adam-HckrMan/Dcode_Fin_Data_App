@@ -286,5 +286,4 @@ def update_y_timeseries(hoverData, yaxis_column_name, axis_type):
     return create_time_series(dff, axis_type, yaxis_column_name)
 
 if __name__ == '__main__':
-    from os import environ
-    app.run(debug=False, port=environ.get("PORT", 5000), processes=2)
+    app.run(debug=True)

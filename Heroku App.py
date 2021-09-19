@@ -20,7 +20,7 @@ app.listen(port);
 
 server = app.server
 
-egx_df = pd.read_excel('EGX_financial_statements/Annual_FS-07092021234959.xlsx')
+egx_df = pd.read_excel('Annual_FS-07092021234959.xlsx')
 egx_df[['ticker','index','sector','statement','period']] = egx_df[['ticker','index','sector','statement','period']].fillna(method="pad")
 egx_df.set_index('item',inplace=True)
 

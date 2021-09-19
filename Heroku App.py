@@ -5,12 +5,14 @@ import dash_bootstrap_components as dbc
 import numpy as np
 import pandas as pd
 import plotly.express as px
-from dash_bootstrap_templates import load_figure_template
+# from dash_bootstrap_templates import load_figure_template
 
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+# external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+# app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-load_figure_template("DARKLY")
+app = dash.Dash(__name__)
+
+# load_figure_template("DARKLY")
 
 # let port = process.env.PORT;
 # if (port == null || port == "") {

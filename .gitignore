@@ -3,4 +3,4 @@ venv
 .env
 .DS_Store
 venv/*
-pyvenv.cfg
+

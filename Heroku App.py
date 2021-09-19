@@ -12,11 +12,11 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 load_figure_template("DARKLY")
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
+# let port = process.env.PORT;
+# if (port == null || port == "") {
+#   port = 8000;
+# }
+# app.listen(port);
 
 server = app.server
 

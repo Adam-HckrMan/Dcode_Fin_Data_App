@@ -12,7 +12,11 @@ app = dash.Dash(__name__)
 
 load_figure_template("DARKLY")
 
-import heroku
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 
 server = app.server
 
